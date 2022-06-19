@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+#header{
+    width: 100%;
+    background-color: #2E2E2E;
+     padding-top: 20px;
+    /* width: auto; */
+    /* overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%; */
+  /* position: fixed; */
+ 
+ 
+}
+ 
+ 
+.header_container{
+    width: 100%;
+    height: 80px;
+     /* background-color: red;  */
+    display: flex;
+    justify-content:space-between;
+    /* margin-top: 400px; */
+}
+ 
+#logo{
+     width: 6500%;
+    height: 80px;
+    /* background-color:green;  */
+    font-size: 17px;
+    font-family: segoe UI;
+    font-weight: bold;
+    display: flex;
+    justify-content:space-evenly;
+     align-items:flex-end;
+     padding: 10px;
+   
+   
+}
+p{
+    color: beige;
+}
+ 
+.search_ops{
+    width: 150%;
+    height: 80px;
+     /* background-color: yellow;  */
+    /* padding: 0px 30px; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    column-gap: 2%;
+}
+ 
+.inp{
+    width: 35%;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    text-indent: 10px;
+    outline: none;
+    transition: .4s;
+ 
+}
+ 
+.inp:focus {
+    box-shadow: 0 0 8px lightblue;
+}
+ 
+.btn{
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #1c83d5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+ 
+.btn:hover{
+    background-color: #116ab1;
+}
+ 
+ 
+/* css for news section  */
+ 
+#news{
+    width: 60%;
+    /* padding: 5px; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    height: auto;
+    column-gap: 2%;
+    row-gap:65px;
+     /* background-color:green; */
+    margin: auto;
+}
+ 
+.news_card{
+    width: 100%;
+      /* background-color: red;   */
+    display: flex;
+    box-shadow: 0 0 5px lightgray;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 5px;
+ 
+   
+}
+ 
+.news_img{
+     height: 100%;  
+    width: 60%;
+     /* background-color: yellow;  */
+     /* overflow: hidden;  */
+     border-radius: 7px;
+     /* padding: 22px;  */
+     /* object-fit:fill; */
+ 
+     
+}
+ 
+.news_img > img {
+    height: 10%;
+    border-radius: 5px;
+ 
+   
+}
+h2{
+    color: #2E2E2E;
+    font-family: 14px roboto, sans-serif;
+}
+ 
+.news_details{
+    width:100%;
+    /* background-color: pink;   */
+padding: 0px;
+    font-family: segoe UI;
+     display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-start;
+   
+}
+#img{
+    height: 130%;
+}
+ 
+.author{
+    color: gray;
+    font-style: italic;
+ 
+}
+ 
+.content{
+    color: #464646;
+}
+#container{
+    display:flex;
+    justify-content: flex-start;
+}
+#add{
+    /* background-color: green; */
+    width: 19%;
+    height: 600px;
+   
+}
+#tre{
+    /* background-color:red; */
+    width: 19%;
+    height: 600px;
+    /* display: grid;  */
+    /* grid-template-columns: repeat(1,1fr); */
+}
+img{
+    width: 90%;
+    height: 130px;
+    border-radius: 5px;
+}
+p{
+    cursor: pointer;
+}
+h2{
+    font-weight: 700;
+    font-size: 20px;
+   
+}
+h4{
+    font-size: 14px
+}
+a{
+    text-decoration: none;
+    color:black;
+ 
+ 
+}
+#im{
+    width: 10%;
+    height: 25%;
+    border-radius: 0cm;
+}
+input{
+    width: 306px;
+    height: 23px;
+}
+#clockContainer {
+    position: relative;
+    margin-bottom: 0px;
+    height: 40vw;
+    padding: 40px;
+    /*to make the height and width responsive*/
+    width: 40vw;
+      /* background: url("https://static.thenounproject.com/png/197364-200.png") no-repeat;   */
+    /*setting our background image*/
+    background-size: 50%;
+    background-position: 35px 35px;  
+    /* background-size: 40%; */
+    padding: 12px 30px 32px 60px;
+ 
+   
+}
+ 
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: ghostwhite;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+ 
+#hour {
+    width: 1%;
+    height: 2.2%;
+    top: 10.5%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+ 
+#minute {
+    width: 0.5%;
+    height: 2.6%;
+    top: 10%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+ 
+#second {
+    width: 0.7%;
+    height: 3.4%;
+    top:  9.6%;
+    left: 49.25%;
+    opacity: 0.8;
+    color: blue;
+}
+ 
+#upper{
+    display: flex;
+   justify-content: space-between;
+   font-size: 10px;
+   width: 90%;
+   justify-items: flex-end;
+   /* padding: 20px; */
+   /* margin-top: 20px; */
+   color: rgb(218, 216, 216);
+   margin-left: 60px;
+}
+#lower{
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+  /* padding: 50px; */
+   
+}
+ #img1{
+   width: 90px;
+   height: 20px;
+   margin-top: 20px;
+}
+#navbar{
+    background-color: #4e4e4e;
+}
+ 
+ .img5{
+    width: 25px;
+    height: 25px;
+    margin-top: 18px;
+ }
+ #img2{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+ }
+h3{
+    cursor: pointer;
+}
+button{
+    background-color: blue;
+}
+ 
+ 
+ 
+ 
+input{
+    width: 10px;
+    box-sizing: border-box;
+    border: 0cm;
+    /* border: 2px solid #ccc; */
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:white;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-MGjFwklyyAV9qO3VJszzLAVSaH5bfTmjnNi29y7t7uoDSBgfHGZJ88sqPqXjA-DY99A&usqp=CAU");
+     background-position: 10px 1px;  
+    background-size: 40%;
+    background-repeat: no-repeat;
+     padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+     transition: width 0.4s ease-in-out;
+     
+}
+ 
+input:focus {
+    width: 20%;
+   
+}
+/* .sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+ 
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky + .content {
+  padding-top: 60px;
+}
+.content {
+  padding: 16px;
+} */
+ 
